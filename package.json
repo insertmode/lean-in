@@ -1,0 +1,30 @@
+{
+  "name": "lean-in",
+  "description": "shared web annotations",
+  "version": "0.0.1",
+  "homepage": "https://github.com/insertmode/lean-in/",
+  "repository": {
+    "type": "git",
+    "url": "hhttps://github.com/insertmode/lean-in.git"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "browserify index.js -o LeanIn.user.js",
+    "test": "lab test/*.js"
+  },
+  "directories": {
+    "test": "test/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ainsertmode/lean-in/issues"
+  },
+  "devDependencies": {
+    "browserify": "^4.1.10",
+    "watchify": "^0.10.2",
+    "userscript-phantom-tester": "0.0.1"
+  },
+  "dependencies": {
+    "native-promise-only": "^0.7.5-e"
+  }
+}
