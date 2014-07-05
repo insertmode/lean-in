@@ -9,8 +9,13 @@ db.post({
      url: document.location.href
 });
 
-db.changes().on('change', function(doc) {
-    console.log('Ch-Ch-Changes', doc);
+db.changes({
+    include_docs: true,
+    live: true
+}).on('change', function(entry) {
+    console.log('Ch-Ch-Changes', entry.doc);
+    //var doc = entry.doc;
+    //document.write('<h1><span>'+doc.date+'</span><span>'+doc.url+'</span></h1>');
 });
 
 // db.replicate.to('http://example.com/mydb');
