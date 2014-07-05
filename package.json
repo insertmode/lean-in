@@ -3,6 +3,10 @@
   "description": "shared web annotations",
   "version": "0.0.1",
   "homepage": "https://github.com/insertmode/lean-in/",
+  "userscript": {
+    "include": "*",
+    "namespace": "http://www.insert-mode.com/"
+  },
   "repository": {
     "type": "git",
     "url": "hhttps://github.com/insertmode/lean-in.git"
@@ -15,14 +19,15 @@
   "directories": {
     "test": "test/"
   },
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/ainsertmode/lean-in/issues"
   },
   "devDependencies": {
     "browserify": "^4.1.10",
     "watchify": "^0.10.2",
-    "userscript-phantom-tester": "0.0.1"
+    "userscript-phantom-tester": "0.0.1",
+    "userscript-header-from-package.json": "0.0.1"
   },
   "dependencies": {
     "native-promise-only": "^0.7.5-e"
