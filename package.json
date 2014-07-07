@@ -21,13 +21,16 @@
   },
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ainsertmode/lean-in/issues"
+    "url": "https://github.com/insertmode/lean-in/issues"
   },
   "devDependencies": {
+    "brfs": "^1.1.2",
     "browserify": "^4.1.10",
-    "watchify": "^0.10.2",
+    "imageinliner": "^0.2.2",
+    "pouchdb-server": "^0.4.0",
+    "userscript-header-from-package.json": "0.0.1",
     "userscript-phantom-tester": "0.0.1",
-    "userscript-header-from-package.json": "0.0.1"
+    "watchify": "^0.10.2"
   },
   "dependencies": {
     "native-promise-only": "^0.7.5-e",
