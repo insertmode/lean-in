@@ -1,40 +1,54 @@
 div.lean-in-tab {
-    position: absolute;
+    position: fixed;
     top:15%;
     left:0;
-    z-index: 1;
+    z-index: 700001;
+    width: 100%;
+    padding: 0;
 }
 div.lean-in-tab .icon {
-    background-image: url(resource/leaning-pencil-2b.png);
 	position: absolute;
     top:15%;
     left:0;
-    z-index:2;
+    z-index:700004;
     height: 32px;
     width: 32px;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
+    background-image: url(resource/leaning-pencil-2b.png);
+    background-color: #fff;
     background-size: cover;
+    padding: 0;
 }
-div.lean-in-tab:hover .icon {
+div.lean-in-tab:hover .icon, div.lean-in-tab.hover .icon {
     background-image: url('resource/leaning-pencil-1b.png');
+    box-shadow: none;
 }
+
+div.lean-in-tab.hover .icon {
+	background-color: #cfc;
+}
+
+div.lean-in-tab.hascontent .icon {
+	background-color: #ffc;
+}
+
 div.lean-in-tab .content {
     position: absolute;
-    width: 75%;
+    width: 70%;
     left: -100%;
     top: 15%;
+	height: 30px;
     box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.3);
-    z-index:3;
+    z-index:700003;
     background: #fff;
-	height: 300px;
     overflow:auto;
-    transition: left,height 1s ease 0;
+    transition: left,height 1s ease 1s;
 }
-div.lean-in-tab:hover .content {
-    position: absolute;
-    top: 0;
-    width: 70%;
-    left: 30px;
+div.lean-in-tab:hover .content, div.lean-in-tab.hover .content {
+    left: 0;
+    padding-left: 32px;
+	height: 300px;
     transition-duration: 0.5s;
+    transition-delay: 0s;
     display:block;
 }
