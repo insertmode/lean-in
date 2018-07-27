@@ -24,16 +24,15 @@
     "url": "https://github.com/insertmode/lean-in/issues"
   },
   "devDependencies": {
-    "brfs": "^1.1.2",
-    "browserify": "^4.1.10",
-    "imageinliner": "^0.2.2",
-    "pouchdb-server": "^0.4.0",
+    "brfs": "^2.0.0",
+    "browserify": "^16.2.2",
+    "imageinliner": "^0.2.4",
     "userscript-header-from-package.json": "0.0.1",
-    "userscript-phantom-tester": "0.0.1",
-    "watchify": "^0.10.2"
+    "userscript-phantom-tester": "0.1.0",
+    "watchify": "^3.11.0"
   },
   "dependencies": {
-    "native-promise-only": "^0.7.5-e",
-    "pouchdb": "^2.2.3"
+    "native-promise-only": "^0.8.1",
+    "pouchdb": "^7.0.0"
   }
 }
